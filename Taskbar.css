@@ -1,0 +1,103 @@
+/* src/styles/Taskbar.css */
+
+/* Taskbar (Sidebar) Styling */
+.taskbar {
+    width: 220px; /* Increase width slightly for better spacing */
+    background-color: #2c3e50; /* Dark Blue-Gray for the sidebar */
+    color: white;
+    padding: 30px 20px; /* Add more padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed; /* Fix the taskbar to the left */
+    height: 100vh; /* Full screen height */
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15); /* Add a deeper shadow for more depth */
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Header of Taskbar */
+.taskbar h2 {
+    font-size: 1.6rem; /* Slightly smaller font */
+    font-weight: bold;
+    margin-bottom: 40px; /* More space between header and menu */
+    text-align: center;
+    color: #ecf0f1; /* Light Grey for text */
+    letter-spacing: 1px; /* Slight letter spacing for a modern look */
+}
+
+/* Taskbar Menu */
+.taskbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Makes the menu items take up available space */
+}
+
+.taskbar ul li {
+    padding: 20px 25px; /* Larger padding for bigger buttons */
+    font-size: 1.4rem; /* Larger font size for bigger buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transform transition */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 15px; /* Spacing between menu items */
+    background-color: transparent; /* Default background (no color) */
+    color: #ecf0f1; /* Default text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Set a fixed height for the button */
+}
+
+/* Hover effect for menu items */
+.taskbar ul li:hover {
+    background-color: #34495e; /* Darker shade for hover effect */
+    color: #ecf0f1;
+    transform: translateX(5px); /* Subtle hover effect */
+}
+
+/* Active Menu Item (only bright when clicked) */
+.taskbar ul li.active {
+    background-color: #1abc9c; /* Bright color for active item */
+    color: white;
+    font-weight: bold;
+    transform: translateX(5px); /* Subtle hover effect on active item */
+}
+
+/* Add specific background color for Dashboard, Orders, and Analytics */
+.taskbar ul li.dashboard,
+.taskbar ul li.orders,
+.taskbar ul li.analytics {
+    background-color: #1abc9c; /* Green background color */
+    color: white;
+    font-weight: bold;
+}
+
+/* Taskbar Bottom Links (Settings, Logout, etc.) */
+.taskbar .bottom-links {
+    margin-top: 30px; /* More space from menu items */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.taskbar .bottom-links li {
+    font-size: 1rem;
+    color: #bdc3c7;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease; /* Add smooth transform transition */
+    border-radius: 6px;
+    margin-bottom: 8px; /* Add space between bottom links */
+}
+
+/* Hover effect for bottom links */
+.taskbar .bottom-links li:hover {
+    color: #ecf0f1;
+    transform: translateX(5px); /* Subtle hover effect on bottom links */
+}
+
+/* Taskbar (Sidebar) Container */
+.taskbar .bottom-links li:last-child {
+    margin-bottom: 0; /* Remove margin on the last link */
+}

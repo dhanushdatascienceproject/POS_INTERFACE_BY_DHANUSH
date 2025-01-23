@@ -1,0 +1,187 @@
+/* Container for the whole application */
+.app-container {
+    display: flex;
+    height: 100vh; /* Full height of the screen */
+    width: 100%;   /* Full width of the screen */
+  }
+  
+  /* Taskbar Styling */
+  .taskbar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh; /* Full height of the screen */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the taskbar */
+    top: 0;
+    left: 0;
+  }
+  
+  /* Main content container */
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between sections */
+    margin-left: 250px; /* Leave space for the taskbar */
+    width: calc(100% - 250px); /* Take the remaining width after the taskbar */
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh; /* Full height of the screen */
+    overflow-y: auto; /* Enable scrolling for overflowing content */
+  }
+  
+  /* Each section for content */
+  .section {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px); /* 50% width minus the gap */
+    box-sizing: border-box;
+    height: calc(50% - 20px); /* 50% height minus the gap */
+  }
+  
+  /* Services list container */
+  .services-list {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Flex-grow to take available space */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    height: 100%; /* Ensure it fills the parent container */
+    overflow-y: auto; /* Enable scrolling for overflowing content */
+    box-sizing: border-box;
+  }
+  
+  /* Header for services */
+  .services-list h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Services grid layout */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible grid */
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Service card */
+  .service-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .service-card button {
+    background-color: #3498db;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button Styling for Order and Analytics */
+.taskbar ul li.orders button,
+.taskbar ul li.analytics button {
+  background-color: #3498db; /* Blue background color */
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px; /* Adjust padding for better button size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+/* Hover effect for the buttons */
+.taskbar ul li.orders button:hover,
+.taskbar ul li.analytics button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Active Button Styling */
+.taskbar ul li.orders button.active,
+.taskbar ul li.analytics button.active {
+  background-color: #1abc9c; /* Green background for active */
+  color: white;
+  font-weight: bold;
+}
+
+  .service-card button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column; /* Single column layout on smaller screens */
+      gap: 10px;
+    }
+  
+    .section {
+      width: 100%;
+      height: auto;
+    }
+  
+    .services-list {
+      padding: 15px;
+    }
+  
+    .services-list h2 {
+      font-size: 20px;
+    }
+  
+    .service-card h3 {
+      font-size: 16px;
+    }
+  
+    .service-card p {
+      font-size: 12px;
+    }
+  
+    .service-card button {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  }
+  

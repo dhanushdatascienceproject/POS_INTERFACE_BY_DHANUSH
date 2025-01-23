@@ -1,0 +1,104 @@
+/* Checkout Container */
+.checkout {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    top: -224px;
+  }
+  
+  /* Checkout Header */
+  .checkout-header {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Checkout Details */
+  .checkout-details {
+    margin-bottom: 20px;
+  }
+  
+  .checkout-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .checkout-item span {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .total-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
+  /* Payment Methods */
+  .payment-methods {
+    margin-top: 20px;
+  }
+  
+  .pay-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background-color: #218838;
+  }
+  
+  /* UPI Payment Section */
+  .upi-payment {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .qr-code-container {
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .checkout {
+      padding: 20px;
+    }
+  
+    .checkout-header {
+      font-size: 22px;
+    }
+  
+    .checkout-item span {
+      font-size: 14px;
+    }
+  
+    .total-price {
+      font-size: 16px;
+    }
+  
+    .pay-button {
+      padding: 12px;
+      font-size: 16px;
+    }
+  }
+  

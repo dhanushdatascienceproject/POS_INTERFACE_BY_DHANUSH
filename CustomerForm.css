@@ -1,0 +1,97 @@
+/* src/styles/CustomerForm.css */
+
+/* Container for forms */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align the forms to the top */
+    gap: 20px; /* Add space between the two forms */
+    position: relative;
+  }
+  
+  /* Form container */
+  form {
+    background-color: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 97%; /* Set width to 48% to take up half the space */
+    max-width: 330px; /* Adjust max-width */
+    margin: -334px 0 20px 327px; /* This moves the form up by 5 inches (480px) and to the right by 2 inches (192px) */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title */
+  form h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Input focus state */
+  form input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  /* Submit button */
+  form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover state */
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .form-container {
+      flex-direction: column; /* Stack the forms on smaller screens */
+    }
+  
+    form {
+      width: 80%; /* Adjust the width on smaller screens */
+      padding: 60px;
+    }
+  
+    form h2 {
+      font-size: 20px;
+    }
+  
+    form input {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    form button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  

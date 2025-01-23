@@ -1,0 +1,15 @@
+/* src/styles/Analytics.css */
+.analytics {
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .analytics h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .analytics-data {
+    font-size: 18px;
+  }
+  
