@@ -1,17 +1,14 @@
 ![image alt](https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(99).png?raw=true)
-
-
-
 https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(98).png?raw=true
 ![image alt](https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(98).png?raw=true)
-![image alt]()
-![image alt]()
-![image alt]()
-![image alt]()
-![image alt]()
-![image alt]()
-![image alt]()
-
+![image alt](https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(97).png?raw=true)
+![image alt](https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(96).png?raw=true)
+![image alt](https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(95).png?raw=true)
+![image alt](https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(94).png?raw=true)
+![image alt](https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(92).png?raw=true)
+![image alt](https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(90).png?raw=true)
+![image alt](https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(101).png?raw=true)
+![image alt](https://github.com/dhanushdatascienceproject/POS_INTERFACE_BY_DHANUSH/blob/main/Screenshot%20(100).png?raw=true)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
